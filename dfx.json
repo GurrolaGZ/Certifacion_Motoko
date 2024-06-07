@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "reportes_ciudadanos_backend": {
+      "main": "src/reportes_ciudadanos_backend/main.mo",
+      "type": "motoko"
+    },
+    "reportes_ciudadanos_frontend": {
+      "dependencies": [
+        "reportes_ciudadanos_backend"
+      ],
+      "source": [
+        "src/reportes_ciudadanos_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "reportes_ciudadanos_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
